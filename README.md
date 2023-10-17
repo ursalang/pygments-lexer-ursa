@@ -7,13 +7,21 @@ for use with the syntax highlighter [Pygments](https://pygments.org).
 
 It is distributed under a BSD license.
 
-I hope it will soon be part of the Pygments distribution.
+I hope it will one day be part of the Pygments distribution.
+
+
+## Installation
+
+The easiest way to install is from PyPI, the Python Package Index:
+
+`pip install pygments-lexer-ursa`
+
+This will install Pygments itself if you don’t already have it installed.
 
 
 ## Usage
 
-To run Pygments on an Ursa file, assuming you have Pygments installed:
+To run Pygments on an Ursa file:
 
-```
-$ pygmentize -x -l /PATH/TO/ursa.py FILE.ursa
-```
+`pygmentize FILE.ursa`
+
