@@ -20,6 +20,7 @@ release:
 	make dist
 	version=$$(grep version pyproject.toml | grep -o "[0-9.]\+") && \
 	twine upload dist/* && \
-	gh release create v$$version --title "Release v$$version" dist/*
+	gh release create v$$version --title "Release v$$version" dist/* && \
+	git pull --tags
 
 .PHONY:	dist
