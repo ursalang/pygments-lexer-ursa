@@ -23,7 +23,7 @@ URSA_IDENT_PART = ('(?:[$' + uni.combine('Lu', 'Ll', 'Lt', 'Lm', 'Lo', 'Nl',
 URSA_IDENT = URSA_IDENT_START + '(?:' + URSA_IDENT_PART + ')*'
 
 
-class CustomLexer(RegexLexer):
+class UrsaLexer(RegexLexer):
     """
     For Ursa source code.
     """
