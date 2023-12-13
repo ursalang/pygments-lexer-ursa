@@ -24,4 +24,3 @@ This will install Pygments itself if you don’t already have it installed.
 To run Pygments on an Ursa file:
 
 `pygmentize FILE.ursa`
-
