@@ -51,12 +51,12 @@ class UrsaLexer(RegexLexer):
             (r'(\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?', Number.Float),
 
             (r'~|:|\\(?=\n)|'
-             r'(<<|>>>?|==?|!=?|(?:\*\*|\|\||&&|[-<>+*%&|^/]))=?', Operator),
+             r'(<<|>>>?|==?|!=?|:=|(?:\*\*|\|\||&&|[-<>+*%&|^/]))=?', Operator),
             (r'[{(\[;,]', Punctuation),
             (r'[})\].]', Punctuation),
 
             (r'(loop|break|return|continue|if|else|use)\b', Keyword),
-            (r'(let|fn)\b', Keyword.Declaration),
+            (r'(for|let|fn)\b', Keyword.Declaration),
 
             (r'(true|false|null)\b', Keyword.Constant),
             (r'(and|or|not)\b', Operator.Word),
