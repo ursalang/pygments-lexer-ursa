@@ -13,7 +13,7 @@ from pygments.token import Comment, Operator, Keyword, Name, String, \
     Number, Punctuation, Whitespace
 import pygments.unistring as uni
 
-__all__ = ['UrsaLexer']
+__all__ = ['CustomLexer']
 
 URSA_IDENT_START = ('(?:[$_' + uni.combine('Lu', 'Ll', 'Lt', 'Lm', 'Lo', 'Nl') +
                   ']|\\\\u[a-fA-F0-9]{4})')
@@ -23,7 +23,7 @@ URSA_IDENT_PART = ('(?:[$' + uni.combine('Lu', 'Ll', 'Lt', 'Lm', 'Lo', 'Nl',
 URSA_IDENT = URSA_IDENT_START + '(?:' + URSA_IDENT_PART + ')*'
 
 
-class UrsaLexer(RegexLexer):
+class CustomLexer(RegexLexer):
     """
     For Ursa source code.
     """
