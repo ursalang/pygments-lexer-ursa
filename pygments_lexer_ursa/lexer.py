@@ -55,7 +55,7 @@ class UrsaLexer(RegexLexer):
             (r'[{(\[;,]', Punctuation),
             (r'[})\].]', Punctuation),
 
-            (r'(loop|break|return|continue|if|else|use)\b', Keyword),
+            (r'(loop|break|return|continue|if|else|use|of)\b', Keyword),
             (r'(for|let|fn)\b', Keyword.Declaration),
 
             (r'(true|false|null)\b', Keyword.Constant),
