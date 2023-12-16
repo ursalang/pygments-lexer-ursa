@@ -1,6 +1,6 @@
 [project]
 name = "pygments-lexer-ursa"
-version = "1.0.6"
+version = "1.0.7"
 description = "Pygments lexer for Ursa"
 license = {text = "MIT"}
 authors = [
