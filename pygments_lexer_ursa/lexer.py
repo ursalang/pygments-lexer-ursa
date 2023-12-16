@@ -4,7 +4,7 @@
 
     Lexer for Ursa.
 
-    :copyright: Copyright 2006-2023 by the Pygments team, see AUTHORS.
+    :copyright: Copyright 2006-2023 by the Pygments team.
     :license: BSD, see LICENSE for details.
 """
 

@@ -5,7 +5,7 @@ Reuben Thomas <rrt@sc3d.org>
 This is a lexer for the [Ursa programming language](https://ursalang.github.io)
 for use with the syntax highlighter [Pygments](https://pygments.org).
 
-It is distributed under a BSD license.
+It is distributed under a BSD license (see LICENSE file).
 
 I hope it will one day be part of the Pygments distribution.
 
