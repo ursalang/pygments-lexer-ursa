@@ -38,6 +38,13 @@ class CustomLexer(RegexLexer):
         'commentsandwhitespace': [
             (r'\s+', Whitespace),
             (r'//.*?$', Comment.Single),
+            (r'/\*', Comment.Multiline, 'comment'),
+        ],
+        'comment': [
+            (r'[^*/]+', Comment.Multiline),
+            (r'/\*', Comment.Multiline, '#push'),
+            (r'\*/', Comment.Multiline, '#pop'),
+            (r'[*/]', Comment.Multiline),
         ],
         'root': [
             (r'\A#! ?/.*?$', Comment.Hashbang),  # recognized by ursa
