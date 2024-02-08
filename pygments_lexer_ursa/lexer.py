@@ -4,7 +4,7 @@
 
     Lexer for Ursa.
 
-    :copyright: Copyright 2006-2023 by the Pygments team.
+    :copyright: Copyright 2006-2024 by the Pygments team.
     :license: BSD, see LICENSE for details.
 """
 
@@ -62,13 +62,13 @@ class CustomLexer(RegexLexer):
             (r'[{(\[;,]', Punctuation),
             (r'[})\].]', Punctuation),
 
-            (r'(fn|loop|break|return|continue|if|else|use|of)\b', Keyword),
-            (r'(for|let)\b', Keyword.Declaration),
+            (r'(await|break|continue|else|fn|if|launch|loop|of|pub|return|static)\b', Keyword),
+            (r'(class|for|let|trait)\b', Keyword.Declaration),
 
             (r'(true|false|null)\b', Keyword.Constant),
             (r'(and|or|not)\b', Operator.Word),
 
-            (r'(pi|e|js|JSON)\b', Name.Builtin),
+            (r'(print|pi|sqrt|exp|log|sin|cos|tan|range)\b', Name.Builtin),
 
             # Match stuff like: function() {...}
             (r'([a-zA-Z_?.$][\w?.$]*)(?=\(\) \{)', Name.Other),
