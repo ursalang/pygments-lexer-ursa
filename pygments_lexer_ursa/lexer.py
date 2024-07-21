@@ -62,7 +62,7 @@ class CustomLexer(RegexLexer):
             (r'[{(\[;,]', Punctuation),
             (r'[})\].]', Punctuation),
 
-            (r'(await|break|continue|else|fn|if|launch|loop|of|pub|return|static)\b', Keyword),
+            (r'(await|break|continue|else|fn|gen|if|launch|loop|of|pub|return|static|yield)\b', Keyword),
             (r'(class|for|let|trait)\b', Keyword.Declaration),
 
             (r'(true|false|null)\b', Keyword.Constant),
