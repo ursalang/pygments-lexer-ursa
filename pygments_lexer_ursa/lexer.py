@@ -63,7 +63,7 @@ class CustomLexer(RegexLexer):
             (r'[})\].]', Punctuation),
 
             (r'(await|break|continue|else|fn|gen|if|in|launch|loop|pub|return|static|yield)\b', Keyword),
-            (r'(class|for|let|trait|var)\b', Keyword.Declaration),
+            (r'(class|for|let|trait|var|use)\b', Keyword.Declaration),
 
             (r'(true|false|null)\b', Keyword.Constant),
             (r'(and|or|not)\b', Operator.Word),
