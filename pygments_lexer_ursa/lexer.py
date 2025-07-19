@@ -30,7 +30,7 @@ class CustomLexer(RegexLexer):
 
     name = 'Ursa'
     url = 'https://ursalang.github.io'
-    aliases = ['ursa']
+    aliases = ['ursa', 'Ursalang', 'ursalang']
     filenames = ['*.ursa']
     mimetypes = ['application/x-ursa', 'text/x-ursa']
 
